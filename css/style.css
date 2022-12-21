@@ -18,7 +18,7 @@ header {
   
 }
 
-
+/* First-section */
 .first-section {
     background-color: white;
 }
@@ -47,7 +47,7 @@ header {
 
 }
 
-
+/* Second-section */
 .second-section {
     background-color: #9792E4;
 }
@@ -132,3 +132,4 @@ header {
     background-color: white;
 }
 
+/* Fifth-section */
