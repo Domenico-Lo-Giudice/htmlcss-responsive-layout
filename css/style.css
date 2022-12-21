@@ -136,11 +136,12 @@ header {
 
 /* Fifth-section */
 
-
-    .about-us {
+    .fifth-section {
+        background-color: white;
         padding: 50px 20px 100px 20px;
     }
-    
+
+   
 
  .fifth-section >  .container{
     display: flex;
@@ -167,5 +168,42 @@ header {
     /* debug */
     background-color: pink;
     border: 2px dashed black;
+}
+
+/* Sixth-section */
+
+.main-footer {
+    background-color: #9792E4;
+    text-align: center;
+    padding: 50px 20px 100px 20px;
+    
+}
+
+/* Header */
+
+.footer-cont > * {
+    margin-top: 20px
+}
+
+.footer-cont > h3 {
+    font-size: 3em;
+}
+
+.footer-cont > h2 {
+    font-size: 5em;
+    color: #FDC15F;
+
+}
+
+
+.sub-footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    }
+
+.footer-end {
+    padding-top: 80px;
 }
 
