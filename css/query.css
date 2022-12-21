@@ -3,7 +3,7 @@
 
 
 /* TABLET */
-/* second section */
+/* Second-section */
 @media screen and (max-width: 768px) {
 
 
@@ -20,7 +20,7 @@
 
 /* MOBILE */
 
-/* first section */
+/* First-section */
 @media screen and (max-width: 480px) {
 
 
@@ -30,6 +30,18 @@
         align-items: center;
         
 
+    }
+
+}
+
+/* Fifth-section */
+@media screen and (max-width: 480px) {
+
+
+    .about-us {
+
+        flex-direction: column;
+        
     }
 
 }

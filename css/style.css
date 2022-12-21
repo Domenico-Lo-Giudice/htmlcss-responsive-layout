@@ -123,6 +123,8 @@ header {
     padding-bottom: 80px;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 50px 20px 100px 20px;
+    
 }
 
 .benefits-cards {
@@ -133,3 +135,37 @@ header {
 }
 
 /* Fifth-section */
+
+
+    .about-us {
+        padding: 50px 20px 100px 20px;
+    }
+    
+
+ .fifth-section >  .container{
+    display: flex;
+    min-height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+
+}
+.main-col {
+    
+    flex-grow: 2;
+
+    /* debug */
+    background-color: cornflowerblue;
+    border: 2px dashed black;
+}
+
+.side-col {
+    
+    flex-grow: 1;
+
+    /* debug */
+    background-color: pink;
+    border: 2px dashed black;
+}
+
