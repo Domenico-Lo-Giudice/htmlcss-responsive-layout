@@ -20,7 +20,7 @@ header {
 
 
 .first-section {
-    background-color: grey;
+    background-color: white;
 }
 
 .big-card {
@@ -71,6 +71,13 @@ header {
     border: 1px dashed black;
 }
 
+
+/* Third-section */
+
+.third-section {
+    background-color: white;
+}
+
 .titolo {
     text-align: center;
 }
@@ -94,3 +101,34 @@ header {
     margin-top: 20px;
     background-color: #0084FD;
 }
+
+
+/* Fourth-section */
+
+
+.fourth-section {
+    background-color: #9792E4;
+}
+
+.titolo-fourth-section {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+.benefits-cards-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefits-cards {
+    width: 350px;
+    height: 350px;
+    
+    background-color: white;
+}
+
