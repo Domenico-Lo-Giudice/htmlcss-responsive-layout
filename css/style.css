@@ -1,6 +1,7 @@
 header {
     background-color: #0084FD;
-    
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .container-header {
@@ -12,13 +13,9 @@ header {
 
 }
 
-li {
+.navbar ul > li {
     display: inline-block;
   
 }
 
-.logo {
-    margin-top: 5px;
-    
-}
 
