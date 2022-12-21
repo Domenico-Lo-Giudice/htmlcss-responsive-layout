@@ -19,3 +19,28 @@ header {
 }
 
 
+.first-section {
+    height: 1200px;
+    background-color: grey;
+}
+
+.big-card {
+    height: 300px;
+    width: 66%;
+    background-color: #B5DDFF;
+}
+
+.small-card {
+    height: 300px;
+    width: 33%;
+    background-color: red;
+}
+
+.card-container  {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+    
+
+}
