@@ -20,28 +20,53 @@ header {
 
 
 .first-section {
-    height: 1200px;
     background-color: grey;
 }
 
 .big-card {
     height: 300px;
-    width: calc(100%/3*2 - 30px);
+    width: calc(100% / 3 * 2 - 30px);
+
+    /* debug */
     background-color: #B5DDFF;
 }
 
 .small-card {
     height: 300px;
-    width: calc(100%/3 - 30px);
+    width: calc(100% / 3 - 30px);
+
+    /* debug */
     background-color: red;
 }
 
 .card-container  {
-    padding: 50px;
+    padding: 50px 20px 100px 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
-    
 
 }
+
+
+.second-section {
+    background-color: #9792E4;
+}
+
+
+.col-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px 100px 20px;
+    
+}
+
+.girl-col,.boy-col {
+    
+    height: 800px;
+    width: 50%;
+
+    /* debug */
+    background-color: bisque;
+    border: 1px dashed black;
+}
+
