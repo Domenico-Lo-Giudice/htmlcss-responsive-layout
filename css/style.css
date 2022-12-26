@@ -1,209 +1,228 @@
+/* DEBUG */
+
+.debug {
+	background-color: lightskyblue;
+	min-height: 80px;
+	line-height: 80px;
+	border: 2px dashed black;
+}
+
+body {
+	background-color: lightblue;
+}
+
+/* HEADER */
+
 header {
-    background-color: #0084FD;
-    padding-top: 15px;
-    padding-bottom: 15px;
+	background-color: skyblue;
 }
 
-.container-header {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.hamburger-menu {
+	display: none;
 }
 
-.navbar ul > li {
-    display: inline-block;
-  
+header>nav {
+	display: flex;
+	justify-content: space-between;
 }
 
-/* First-section */
-.first-section {
-    background-color: white;
+header>nav>ul {
+	list-style: none;
 }
 
-.big-card {
-    height: 300px;
-    width: calc(100% / 3 * 2 - 30px);
-
-    /* debug */
-    background-color: #B5DDFF;
+header>nav>ul>li {
+	display: inline-block;
 }
 
-.small-card {
-    height: 300px;
-    width: calc(100% / 3 - 30px);
+/* CARDS */
 
-    /* debug */
-    background-color: red;
+#cards {
+	margin: 50px 0;
 }
 
-.card-container  {
-    padding: 50px 20px 100px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
+#cards .cards>.row {
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 15px; */
 }
 
-/* Second-section */
-.second-section {
-    background-color: #9792E4;
+#cards .card {
+	width: calc(100% / 3);
+	padding: 15px;
+
+	border: 1px solid red;
 }
 
-
-.col-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 20px 100px 20px;
-    max-width: 70%;
-    
+#cards .card:first-child {
+	width: calc(100% / 3 * 2);
+	display: flex;
+	padding: 0;
 }
 
-.girl-col,.boy-col {
-    
-    height: 800px;
-    width: 50%;
+/* PLANNING */
 
-    /* debug */
-    background-color: bisque;
-    border: 1px dashed black;
+#planning {
+	background-color: violet;
+	padding: 50px 0;
 }
 
-
-/* Third-section */
-
-.third-section {
-    background-color: white;
+.planning-image {
+	margin-bottom: 100px;
 }
 
-.titolo {
-    text-align: center;
+#planning .card {
+	width: 100%;
+	margin: 30px;
+	padding: 30px;
+	background-color: white;
 }
 
-.titolo > h3  {
-    font-size: 3em;
+/* TESTIMONIAL */
+#testimonials {
+	margin: 80px 0;
 }
 
-.titolo > * {
-    margin-bottom: 20px;
+#testimonials .card {
+	margin: 50px 0;
+	background-color: blueviolet;
+	display: flex;
 }
 
-
-.second-cards {
-    padding: 50px 20px 40px 20px;
+#testimonials .card .card-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
-.card-male, .card-female {
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-    background-color: #0084FD;
+#testimonials .card .card-contents {
+	flex-grow: 1;
+}
+
+/* BENEFITS */
+#benefits {
+	margin: 50px 0;
+}
+
+#benefits .cards>.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#benefits .card {
+	width: calc(100% / 3);
+	padding: 15px;
 }
 
 
-/* Fourth-section */
+/* TABLET */
 
+@media screen and (max-width: 992px) {
+	body {
+		background-color: lightgreen;
+	}
 
-.fourth-section {
-    background-color: #9792E4;
-}
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
 
-.titolo-fourth-section {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 3em;
-}
+	/* HEADER */
 
-.benefits-cards-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 50px 20px 100px 20px;
-    
-}
+	.links {
+		display: none;
+	}
 
-.benefits-cards {
-    width: 350px;
-    height: 350px;
-    
-    background-color: white;
-}
+	.hamburger-menu {
+		display: block;
+	}
 
-/* Fifth-section */
+	/* CARDS */
 
-    .fifth-section {
-        background-color: white;
-        padding: 50px 20px 100px 20px;
-    }
+	#cards .card:first-child {
+		display: block;
+	}
 
-   
+	#cards .card:first-child>.col-50 {
+		width: 100%;
+	}
 
- .fifth-section >  .container{
-    display: flex;
-    min-height: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-    
+	/* PLANNING  */
 
-}
-.main-col {
-    
-    flex-grow: 2;
+	#planning>.container>.row {
+		flex-wrap: wrap;
+	}
 
-    /* debug */
-    background-color: cornflowerblue;
-    border: 2px dashed black;
-}
+	#planning>.container>.row>.col-40 {
+		width: 100%;
+	}
 
-.side-col {
-    
-    flex-grow: 1;
+	#planning .card {
+		margin: 30px 0;
+	}
 
-    /* debug */
-    background-color: pink;
-    border: 2px dashed black;
-}
+	/* BENEFITS */
 
-/* Sixth-section */
-
-.main-footer {
-    background-color: #9792E4;
-    text-align: center;
-    padding: 50px 20px 100px 20px;
-    
-}
-
-/* Header */
-
-.footer-cont > * {
-    margin-top: 20px
-}
-
-.footer-cont > h3 {
-    font-size: 3em;
-}
-
-.footer-cont > h2 {
-    font-size: 5em;
-    color: #FDC15F;
+	#benefits .card {
+		width: 50%;
+	}
 
 }
 
+/* MOBILE */
 
-.sub-footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 50px 20px 50px 20px;
-    }
+@media screen and (max-width: 600px) {
+	body {
+		background-color: coral;
+	}
 
-.footer-end {
-    padding-top: 80px;
+	.container {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+	/* CARDS */
+
+	#cards .card {
+		width: 100%;
+	}
+
+	#cards .card:first-child {
+		width: 100%;
+	}
+
+	/* TESTIMONIALS */
+
+	#testimonials .card {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#testimonials .card .card-image {
+		width: 50vw;
+		height: 50vw;
+		margin: 15px 0;
+	}
+
+	#testimonials .card .card-contents {
+		width: 100%;
+	}
+
+	/* BENEFITS */
+
+	#benefits .card {
+		width: 100%;
+	}
+
+	/* ABOUT */
+
+	#about>.container>.row {
+		flex-wrap: wrap;
+	}
+
+	#about>.container>.row>.col-70,
+	#about>.container>.row>.col-30 {
+		width: 100%;
+	}
+
 }
-
